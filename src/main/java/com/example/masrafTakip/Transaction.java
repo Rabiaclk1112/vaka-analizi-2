@@ -2,6 +2,8 @@ package com.example.masrafTakip;
 
 import javax.persistence.*;
 
+
+
 @Entity
 @Table(name = "transactions")
 public class Transaction {

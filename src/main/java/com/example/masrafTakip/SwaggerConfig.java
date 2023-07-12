@@ -18,7 +18,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.api")) // API'lerinizin olduğu paketi belirtin
+                .apis(RequestHandlerSelectors.basePackage("com.example.masrafTakip.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());
@@ -27,7 +27,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Masraf Takip API")
-                .description("Bu API ile masrafları takip edebilirsiniz.")
+                .description("API dokümantasyonu")
                 .version("1.0.0")
                 .build();
     }
